@@ -1,12 +1,16 @@
 # webpack-sftp-client
 
-## Install
+## INTRODUCTION
+
+A plugin for webpack as an sftp client
+
+## INSTALL
 
 ```
 npm install webpack-sftp-client
 ```
 
-## Usage
+## USAGE
 
 ```
 var WebpackSftpClient = require('webpack-sftp-client');
