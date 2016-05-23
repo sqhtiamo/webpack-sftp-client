@@ -7,20 +7,9 @@
 
 'use strict';
 
-var fs = require('fs');
-
 var client = require('scp2');
 
 function WebpackSftpClient(options) {
-
-    // this.options = _.extend({
-    //     host: '',
-    //     username: '',
-    //     password: '',
-    //     path: '',
-    //     remotePath: ''
-    // }, options);
-    console.log(options)
     this.options = options;
 }
 
