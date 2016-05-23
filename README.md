@@ -1,9 +1,16 @@
 # webpack-sftp-client
 
-Use this module like,
+## Install
 
 ```
-import WebpackSftpClient from 
+npm install webpack-sftp-client
+```
+
+## Usage
+
+```
+var WebpackSftpClient = require('webpack-sftp-client');
+
 new WebpackSftpClient({
     port: '22',
     host: 'exmaple.com',
@@ -13,3 +20,7 @@ new WebpackSftpClient({
     remotePath: '/data/website/demo/'
 })
 ```
+
+Copyright (c) 2016 - 2017 zhangyuhang
+
+MIT (http://www.opensource.org/licenses/mit-license.php)
