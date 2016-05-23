@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/sqhtiamo/webpack-sftp-client/issues"
   },
-  "homepage": "https://github.com/sqhtiamo/webpack-sftp-client#readme"
+  "homepage": "https://github.com/sqhtiamo/webpack-sftp-client#readme",
+  "dependencies": {
+    "scp2": "^0.4.0"
+  }
 }
