@@ -27,8 +27,13 @@ WebpackSftpClient.prototype.apply = function(compiler) {
 
         client.scp(self.options.path,
             username + ':' + password + '@' + host + ':' + remotePath,
-            function(err) {
-                console.log(err);
+            function (err) {
+		if (err) {
+                    console.log(err);
+		}
+		else {
+                    console.log('Transfer with SFTP completed!');
+		}
         });
 
     });
