@@ -24,7 +24,6 @@ new WebpackSftpClient({
     remotePath: '/data/website/demo/'
 })
 ```
-
 Copyright (c) 2016 - 2017 zhangyuhang
 
 MIT (http://www.opensource.org/licenses/mit-license.php)
