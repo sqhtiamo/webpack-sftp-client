@@ -11,16 +11,6 @@ var client = require('scp2');
 
 function WebpackSftpClient(options) {
     this.options = options;
-    var self = this;
-
-    var remotePath = self.options.remotePath;
-    var path = self.options.path;
-    var username = self.options.username;
-    var host = self.options.host;
-    var password = self.options.password;
-    var port = self.options.port || '22';
-
-        console.log(username + ':' + password + '@' + host + ':' + port + ':' + remotePath);
 }
 
 WebpackSftpClient.prototype.apply = function(compiler) {
@@ -49,15 +39,5 @@ WebpackSftpClient.prototype.apply = function(compiler) {
 
     });
 };
-
-new WebpackSftpClient({
-    port: '55',
-    host: 'exmaple.com',
-    username: 'root',
-    password: 'password',
-    path: './build/',
-    remotePath: '/data/website/demo/'
-});
-
 
 module.exports = WebpackSftpClient;
