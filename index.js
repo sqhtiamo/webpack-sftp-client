@@ -24,9 +24,10 @@ WebpackSftpClient.prototype.apply = function(compiler) {
         var username = self.options.username;
         var host = self.options.host;
         var password = self.options.password;
+        var port = self.options.port || '22';
 
         client.scp(self.options.path,
-            username + ':' + password + '@' + host + ':' + remotePath,
+            username + ':' + password + '@' + host + ':' + port + ':' + remotePath,
             function (err) {
                 if (err) {
                     console.log(err);
@@ -38,6 +39,5 @@ WebpackSftpClient.prototype.apply = function(compiler) {
 
     });
 };
-
 
 module.exports = WebpackSftpClient;
