@@ -22,8 +22,8 @@ new WebpackSftpClient({
     password: 'password',
     path: './build/',
     remotePath: '/data/website/demo/',
-    // Show details of files uploading
-    verbos: true
+    // Show details of uploading for files
+    verbose: true
 })
 ```
 Copyright (c) 2016 - 2017 zhangyuhang
