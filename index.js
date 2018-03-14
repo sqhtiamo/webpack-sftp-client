@@ -19,7 +19,7 @@ WebpackSftpClient.prototype.apply = function (compiler) {
 
     var self = this;
 
-    compiler.plugin('after-emit', function (compilation) {
+    compiler.plugin('done', function (compilation) {
 
         var remotePath = self.options.remotePath;
         var path = self.options.path;
